@@ -1,0 +1,46 @@
+<template name="adminLayout">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    var _prum = [
+                  ['id', '56cadd60abe53dba6dc0e5e6'],
+                  ['mark', 'firstbyte', (new Date()).getTime()],
+                ];
+    (function() {
+      var s = document.getElementsByTagName('script')[0]
+       , p = document.createElement('script');
+      p.async = 'async';
+      p.src = '//rum-static.pingdom.net/prum.min.js';
+      s.parentNode.insertBefore(p, s);
+    })();
+  </script>
+</head>
+<body>
+  <div class="main-shell">
+    <div class="container-fluid">
+      <div class="row">
+        <header class="admin-header">
+          {{> adminHeader}}
+        </header>
+        <div class="admin-body-content">
+          <div class="errors hidden"></div>
+          {{> yield}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    {{> footer}}
+  </footer>
+  <script>
+  (function(d) {
+  var config = {
+  kitId: 'mbl0jyt',
+  scriptTimeout: 3000,
+  async: true
+  },
+  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+  </script>
+</body>
+</template>

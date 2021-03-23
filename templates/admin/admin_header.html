@@ -1,0 +1,26 @@
+<template name="adminHeader">
+<div class="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-8 col-sm-3 col-md-3 col-lg-3 logo-centered">
+        <a href="http://www.medallia.com/">
+          <img src="/images/medallia_logo.png" class="header-image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-9 col-md-9 col-lg-9 header-links">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.medallia.com/software/">Product</a></li>
+          <li><a href="http://www.medallia.com/services/">Services</a></li>
+          <li><a href="http://www.medallia.com/resources">Resources</a></li>
+          <li><a href="http://www.medallia.com/industries/">Industries</a></li>
+          <li><a href="http://www.medallia.com/customers/">Customers</a></li>
+          <li><a href="http://www.medallia.com/about/">About</a></li>
+          {{#if currentUser}}
+            <li><a href="#" class="logout">Logout</a></li>
+          {{/if}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</template>

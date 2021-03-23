@@ -1,0 +1,137 @@
+<template name="lead_form">
+<div class="combo-icons hidden">
+  <img src="/images/medallia_institute_logo.png" class="medallia-institute">
+  <img src="/images/simple_wheel_icon.png" class="icon">
+</div>
+
+<form id="lead_form" class="lead-form hidden">
+  <div class="form-content">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h2 class="lead-form-heading">Thank you for completing the self-assessment. Please provide your contact information to receive a copy of your maturity report.</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="form-group">
+          <div class="first-name">
+            <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First name" onkeyup="iePlaceholder($(this))">
+            <label class="ie-placeholder hidden" style="font: 0.75em/normal sans-serif; left: 0px; top: 8px; width: 120px; height: 20px; color: rgb(186, 186, 186); position: absolute; overflow-x: hidden; font-size-adjust: none; font-stretch: normal;" for="first_name">First name</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="form-group">
+          <div class="last-name">
+            <input type="text" name="last_name" class="form-control" id="last_name" placeholder="Last name" onkeyup="iePlaceholder($(this))">
+            <label class="ie-placeholder hidden" style="font: 0.75em/normal sans-serif; left: 0px; top: 8px; width: 120px; height: 20px; color: rgb(186, 186, 186); position: absolute; overflow-x: hidden; font-size-adjust: none; font-stretch: normal;" for="last_name">Last name</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="form-group">
+          <div class="email">
+            <input type="email" name="email" class="form-control" id="email" placeholder="Email address" onkeyup="iePlaceholder($(this))">
+            <label class="ie-placeholder hidden" style="font: 0.75em/normal sans-serif; left: 0px; top: 8px; width: 140px; height: 20px; color: rgb(186, 186, 186); position: absolute; overflow-x: hidden; font-size-adjust: none; font-stretch: normal;" for="email">Email address</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="form-group">
+          <div class="company">
+            <input type="text" name="company" class="form-control" id="company" placeholder="Company name" onkeyup="iePlaceholder($(this))">
+            <label class="ie-placeholder hidden" style="font: 0.75em/normal sans-serif; left: 0px; top: 8px; width: 150px; height: 20px; color: rgb(186, 186, 186); position: absolute; overflow-x: hidden; font-size-adjust: none; font-stretch: normal;" for="company">Company name</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="form-group">
+          <div class="job-title">
+            <input type="text" name="job_title" class="form-control" id="job_title" placeholder="Job title" onkeyup="iePlaceholder($(this))">
+            <label class="ie-placeholder hidden" style="font: 0.75em/normal sans-serif; left: 0px; top: 8px; width: 100px; height: 20px; color: rgb(186, 186, 186); position: absolute; overflow-x: hidden; font-size-adjust: none; font-stretch: normal;" for="job_title">Job title</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="form-group">
+          <div class="country">
+            <select id="country" name="country" class="form-control">
+              <option value="">Country</option>
+              {{#each countries}}
+              <option value="{{name}}">{{name}}</option>
+              {{/each}}
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="form-group">
+          <div class="company-size">
+            <select id="company_size" name="company_size" class="form-control">
+              <option value="">Company size (# of employees)</option>
+              {{#each company_size}}
+                <option value="{{name}}">{{name}}</option>
+              {{/each}}
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="form-group">
+          <div class="industry">
+            <select id="industry" name="industry" class="form-control">
+              <option value="">Industry</option>
+              {{#each industries}}
+              <option value="{{name}}">{{name}}</option>
+              {{/each}}
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <input type='hidden' name='UTM_Medium_Most_Recent__c' id='UTM_Medium_Most_Recent__c'>
+      <input type='hidden' name='UTM_Source_Most_Recent__c' id='UTM_Source_Most_Recent__c'>
+      <input type='hidden' name='UTM_Campaign_Most_Recent__c' id='UTM_Campaign_Most_Recent__c'>
+      <input type='hidden' name='UTM_Content_Most_Recent__c' id='UTM_Content_Most_Recent__c'>
+      <input type='hidden' name='UTM_Term_Most_Recent__c' id='UTM_Term_Most_Recent__c'>
+      <input type='hidden' name='Conversion_Date_Most_Recent__c' id='Conversion_Date_Most_Recent__c'>
+      <input type='hidden' name='Conversion_Page_Most_Recent__c' id='Conversion_Page_Most_Recent__c'>
+      <input type='hidden' name='Conversion_Type_Most_Recent__c' id='Conversion_Type_Most_Recent__c' value='OCEM Assessment Form'>
+      <input type='hidden' name='Conversion_Prod_Interest_Most_Recent__c' id='Conversion_Prod_Interest_Most_Recent__c' value='Experience Cloud'>
+
+      {{> google_tag_manager_script}}
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="lead-submit">
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 col-centered">
+      <div class="row">
+        <button type="submit" class="btn btn-primary button">Submit</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+<div class="row">
+  <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 centered calculating-result hidden">
+    <img src="/images/spinner.gif">
+    <div class="generating-report-text">Submitting...</div>
+  </div>
+</div>
+
+<div class="row lead-form-info hidden">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="submit-form-info">
+      <p class="form-submit-info">By submitting this form, you agree that Medallia may include this data to develop and publish broadly applicable customer experience management insights (such as industry benchmarks), but only when the data has been aggregated such that the publication cannot be used to identify you or your company.</p>
+    </div>
+  </div>
+</div>
+
+<div class="internet-connection-error hidden">Error: Results were not successfully processed. Please check your internet connection and try again.</div>
+</template>

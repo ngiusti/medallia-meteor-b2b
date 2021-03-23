@@ -1,0 +1,61 @@
+<template name="result">
+<div class="result-pages hidden">
+  <img src="/images/medallia_institute_logo.png" class="medallia-institute">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="ocem-report-intro">
+      <h1 class="ocem-report-title">Your Operational B2B CEM Maturity Report</h1>
+      <h1 class="your-score-heading">
+        <span>Your Score: </span>
+        <span class="overall-score"></span>
+        <sub>/400</sub>
+      </h1>
+      <p class="reporting-paragraph">This report summarizes how you perceive your company's current customer experience practices. Each of the first 16 questions you answered maps to one of four business capabilities. These capabilities are proven to improve company performance and drive profitable growth over time.</p>
+      <p class="reporting-paragraph">There are three components to this report: an overview of the capabilities we are assessing, your aggregate results by capability, and your answers to each question compared to the best practice. Use these results to identify where your business can capitalize on its current strengths as well as where it will need to improve in order to compete and win in the future.</p>
+
+      <div class="row ocem-image-themes">
+        <div class="ocem-maturity-image col-xs-7 col-sm-7 col-md-7 col-lg-7 col-centered-mobile">
+          <img src="/images/medallia_framework_wheel.png">
+        </div>
+        <div class="themes-description-list col-xs-12 col-sm-5 col-md-5 col-lg-5">
+          <ul>
+          <li>
+            <strong>See yourself as customers do.</strong>
+            <p>Companies capture a comprehensive view of the customer's feedback in real time to develop an empathic understanding of customers’ needs.</p>
+          </li>
+          <li>
+            <strong>Wire customers into every decision.</strong>
+            <p>Customer feedback is distributed immediately to the teams that can directly act on it.</p>
+          </li>
+          <li>
+            <strong>Drive accountability at all levels.</strong>
+            <p>Employees at all levels and across functions are empowered and held accountable for improving the customer experience.</p>
+          </li>
+          <li>
+            <strong>Innovate continuously at scale.</strong>
+            <p>Companies use customer-driven learning and experimentation to accelerate improvements throughout the company and stay ahead of customer expectations.</p>
+          </li>
+          </ul>
+        </div>
+      </div>
+      <div class="capability-paragraphs">
+        <p>Start a dialogue about your company’s customer experience practices by encouraging your colleagues to take the assessment at <a href="https://ocem-assessment-b2b.medallia.com" target="_blank">ocem-assessment-b2b.medallia.com</a>.</p>
+        <p class="contact-us"><a href="http://www.medallia.com/contact-us/" target="_blank">Contact us</a> to learn more about how to build these capabilities at your company.</p>
+        <p class="email-report-paragraph">This report will also be sent to the email address you provided at the end of your assessment.</p>
+      </div>
+    </div>
+    <div class="results">
+      {{> result_chart}}
+      {{> result_theme_1}}
+      {{> result_theme_2}}
+      {{> result_theme_3}}
+      {{> result_theme_4}}
+      {{> comment_section}}
+
+      <div class="download-email-buttons">
+        <button class="btn btn-primary button pdf-button" onclick="dowloan_pdf();">Download PDF</button>
+        <a href="http://www.medallia.com/operational-cem" target="_blank" class="btn btn-default button">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+</template>

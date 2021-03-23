@@ -1,0 +1,87 @@
+<template name="benchmarks">
+  <div class="benchmark-link">
+    <a href="#"><i class="fa fa-bars"></i> Benchmarks</a>
+  </div>
+
+  <div class="benchmarks-list">
+    <div class="row">
+      <div class="benchmark" data-theme="see">
+        <div class="col-md-6">
+          <div class="title">See Yourself as Customers Do</div>
+        </div>
+        <div class="col-md-2">
+          <div class="value">
+            <input type="number" max="100" value="{{getBenchmarkValue 'see'}}" disabled="disabled">
+            <div class="error hidden">Error</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="buttons">
+            <a href="#" class="edit-link" onclick="editBenchmark($(this));"><i class="fa fa-pencil"></i>Edit</a>
+            {{> benchmarkButtons}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="benchmark" data-theme="wire">
+        <div class="col-md-6">
+          <div class="title">Wire customers into every decision</div>
+        </div>
+        <div class="col-md-2">
+          <div class="value">
+            <input type="number" max="100" value="{{getBenchmarkValue 'wire'}}" disabled="disabled">
+            <div class="error hidden">Error</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="buttons">
+            <a href="#" class="edit-link" onclick="editBenchmark($(this));"><i class="fa fa-pencil"></i>Edit</a>
+            {{> benchmarkButtons}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="benchmark" data-theme="drive">
+        <div class="col-md-6">
+          <div class="title">Drive accountability at all levels</div>
+        </div>
+        <div class="col-md-2">
+          <div class="value">
+            <input type="number" max="100" value="{{getBenchmarkValue 'drive'}}" disabled="disabled">
+            <div class="error hidden">Error</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="buttons">
+            <a href="#" class="edit-link" onclick="editBenchmark($(this));"><i class="fa fa-pencil"></i>Edit</a>
+            {{> benchmarkButtons}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="benchmark" data-theme="innovate">
+        <div class="col-md-6">
+          <div class="title">Innovate continuously at scale</div>
+        </div>
+        <div class="col-md-2">
+          <div class="value">
+            <input type="number" max="100" value="{{getBenchmarkValue 'innovate'}}" disabled="disabled">
+            <div class="error hidden">Error</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="buttons">
+            <a href="#" class="edit-link" onclick="editBenchmark($(this));"><i class="fa fa-pencil"></i>Edit</a>
+            {{> benchmarkButtons}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

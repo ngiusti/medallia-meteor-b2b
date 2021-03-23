@@ -1,0 +1,133 @@
+<template name="result_chart">
+  <div class="chart-info">
+    <div class="capability-scores">
+      <h1 class="capability-scores-heading">Capability Scores</h1>
+      <p>This section shows your score across each of the four capabilities relative to a maximum score of 100. Learn more about how leading companies have developed these capabilities in the next section of this report.</p>
+    </div>
+
+    <h2>
+      <span>Your Operational CEM Score: </span>
+      <div class="experience-score"></div>
+      <span class="overall-score"></span>
+      <sub>/400</sub>
+    </h2>
+
+    <div class="themes-result-table">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Capability</th>
+            <th>Your Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="theme-capability">
+              <img src="/images/icons/see.png" class="icon">
+              <span>See yourself as customers do</span>
+            </td>
+            <td>
+              <span class="see-theme-score"></span>
+              <sub>/100</sub>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-capability">
+              <img src="/images/icons/wire.png" class="icon">
+              <span>Wire customers into every decision</span>
+            </td>
+            <td>
+              <span class="wire-theme-score"></span>
+              <sub>/100</sub>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-capability">
+              <img src="/images/icons/drive.png" class="icon">
+              <span>Drive accountability at all levels</span>
+            </td>
+            <td>
+              <span class="drive-theme-score"></span>
+              <sub>/100</sub>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-capability">
+              <img src="/images/icons/innovate.png" class="icon">
+              <span>Innovate continuously at scale</span>
+            </td>
+            <td>
+              <span class="innovate-theme-score"></span>
+              <sub>/100</sub>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="capability-mobile">
+      <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-centered">
+        <div class="row">
+          <div class="result-section">
+            <div class="icons">
+              <img src="/images/icons/see.png">
+            </div>
+            <div class="m-title">See yourself as customers do</div>
+            <div class="clearfix"></div>
+            <div class="result-info">
+              <div class="result-score">Your Score</div>
+              <span class="see-theme-score"></span><sub>/100</sub>
+            </div>
+          </div>
+          <div class="result-section">
+            <div class="icons">
+              <img src="/images/icons/wire.png">
+            </div>
+            <div class="m-title">Wire customers into every decision</div>
+            <div class="clearfix"></div>
+            <div class="result-info">
+              <div class="result-score">Your Score</div>
+              <span class="wire-theme-score"></span><sub>/100</sub>
+            </div>
+          </div>
+          <div class="result-section">
+            <div class="icons">
+              <img src="/images/icons/drive.png">
+            </div>
+            <div class="m-title">Drive accountability at all levels</div>
+            <div class="clearfix"></div>
+            <div class="result-info">
+              <div class="result-score">Your Score</div>
+              <span class="drive-theme-score"></span><sub>/100</sub>
+            </div>
+          </div>
+          <div class="result-section">
+            <div class="icons">
+              <img src="/images/icons/innovate.png">
+            </div>
+            <div class="m-title">Innovate continuously at scale</div>
+            <div class="clearfix"></div>
+            <div class="result-info">
+              <div class="result-score">Your Score</div>
+              <span class="innovate-theme-score"></span><sub>/100</sub>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="responses-heading">Your Responses and<div class="clearfix"></div>Practices of Leading Companies</h1>
+    <p class="rate-company-paragraph">See how you rated your company on the practices that support each capability.</p>
+
+    <div class="result-scoring">
+      <p>Your responses fall into one of five categories:</p>
+      <ul>
+        <li><strong>Absent: </strong>practices are completely absent</li>
+        <li><strong>Developing: </strong>the company has some initial practices in place</li>
+        <li><strong>Deployed: </strong>practices are fully enabled</li>
+        <li><strong>Leading-edge: </strong>the company is pushing the boundaries in this area</li>
+        <li><strong>Don't know: </strong>practices unknown by respondent</li>
+      </ul>
+      <p class="leading-edge-title">The descriptions provided illustrate leading-edge practices in each area and can be used to help identify ways to improve.</p>
+    </div>
+  </div>
+</template>

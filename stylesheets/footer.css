@@ -1,0 +1,118 @@
+footer {
+  margin-top: 4%;
+}
+.site-footer {
+  background: url(images/footer1.svg) no-repeat top;
+    background-color: #071e3c;
+    color: #85919f;
+    font-size: 0.66667em;
+    line-height: 1.66667em;
+    padding: 10% 0 0;
+    margin-top: 100px;
+    max-width: 1910px;
+    margin: auto;
+    position: relative;
+}
+.get-in-touch {
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  right: 10%;
+  top: 13%;
+  font-weight: bold;
+}
+.social-section img {
+  width: 190px;
+  margin-top: 50px;
+}
+.social-section ul {
+  padding: 0;
+  padding-top: 25px;
+  outline-style: no-repeat
+}
+.social-section ul li {
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  display: inline-block;
+  margin-right: 15px;
+}
+.social-section ul li a {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+.social-section ul li a.linkedin {
+  background: url(/images/linkedin-icon.svg) no-repeat center;
+  background-size: 15px auto;
+}
+.social-section ul li a.twitter {
+  background: url(/images/twitter-icon.svg) no-repeat center;
+  background-size: 15px auto;
+}
+.social-section ul li a.facebook {
+  background: url(/images/facebook-icon.svg) no-repeat center;
+  background-size: 15px auto;
+}
+.social-section ul li a.rss {
+  background: url(/images/rss-icon.svg) no-repeat center;
+  background-size: 15px auto;
+}
+
+.social-section ul li:hover,
+.social-section ul li:focus {
+  background-color: white;
+}
+
+.footer-container {
+  margin-top: 100px;
+}
+
+.footer-container ul.menu {
+  padding-left: 0;
+}
+.footer-container ul.menu h2 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 0
+}
+.footer-container ul.menu li {
+  padding-bottom: 10px;
+  list-style: none;
+}
+.footer-container ul.menu li a {
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer-container ul.menu li a:hover,
+.footer-container ul.menu li a:focus {
+  color: #52b1ff;
+  text-decoration: none;
+}
+
+.footer-container p {
+  font-size: 16px;
+  color: rgba(255,255,255,0.5);
+  margin-top: 40px;
+}
+.policies {
+  text-align: center;
+}
+.policies a {
+  display: inline-block;
+  font-size: 16px;
+  color: rgba(255,255,255,0.5);
+  margin-right: 40px;
+}
+.copyright-text {
+  font-size: 16px;
+  color: rgba(255,255,255,0.5);
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.footer-paragraph {
+  text-align: center;
+  padding: 10px 8% 35px 8%;
+}
